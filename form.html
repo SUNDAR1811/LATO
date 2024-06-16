@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotmvalidate</title>
+    <script src="/form.js"></script>
+    <style>
+        form{
+            margin: 5%;   
+        }
+        form p{
+            color: red;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <h1>form validate error</h1>
+    <form name="form">
+        <label>Name*</label>
+        <input type="text" onkeypress="validate1()" onclick="validate1()" id="Name" placeholder="name" required/>
+        <span><p id="error"></p></span>
+        <br>
+        <label>Email*</label>
+        <input type="text" onclick="validate2()" onkeypress="validate2()" id="Email" placeholder="email" required>
+        <span><p id="error1"></p></span>
+        <br>
+        <label>Phone*</label>
+        <input type="number"  onclick="validate3()" onkeypress="validate3()" id="Phone" placeholder="phone" required>
+        <span><p id="error2"></p></span>
+        <br>
+        <label>Address*</label>
+        <input type="text" onkeypress="validate4()" onclick="validate4()" id="Address" placeholder="address" required>
+        <span><p id="error3"></p></span>
+        <br>
+        <label>Password*</label>
+        <input type="password" onkeypress="validate5()" onclick="validate5()" id="Password" placeholder="password" required>
+        <span><p id="error4"></p></span>
+        <br>
+        <button value="submit" id="button"  onclick="validate5()">submit</button>
+    </form>
+</body>
+</html>
+<marquee behavior="" direction="right">hello world</marquee>
